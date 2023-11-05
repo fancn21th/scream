@@ -1,8 +1,20 @@
 {
   "name": "@scream/map",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/map.js",
+  "main": "./dist/map.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.umd.cjs"
+    },
+    "./*": "./*"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
