@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "pnpm install",
+    "build": "pnpm -r --stream build",
     "dev": "pnpm --filter @scream/main dev"
   },
   "keywords": [],
