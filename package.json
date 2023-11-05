@@ -1,15 +1,19 @@
 {
   "name": "scream",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "bootstrap": "pnpm install",
     "build": "pnpm -r --stream build",
     "lint": "pnpm -r lint",
-    "dev": "pnpm --filter @scream/main dev"
+    "dev": "pnpm --filter @scream/main dev",
+    "deploy": "sh ./deploy.sh"
   },
-  "keywords": [],
+  "keywords": [
+    "大屏",
+    "可视化"
+  ],
   "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
   "license": "MIT",
   "devDependencies": {
