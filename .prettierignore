@@ -1,0 +1,11 @@
+coverage
+testApp
+dist
+build
+.cache
+
+.next
+node_modules
+dist
+storybook-static
+.yarn
