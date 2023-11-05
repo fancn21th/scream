@@ -1,3 +1,3 @@
-import Map from './components/Map.vue';
+import OfflineMap from './components/OfflineMap.vue';
 
-export { Map };
+export { OfflineMap as Map };

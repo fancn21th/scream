@@ -1,15 +1,15 @@
-# Logs
-logs
-*.log
-pnpm-debug.log*
-
-# misc
-node_modules
+.chrome
 .DS_Store
-dist
-dist-ssr
-coverage
-*.local
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+pnpm-debug.log*
 
 # Editor directories and files
 .idea
@@ -18,3 +18,8 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+.env.development
+
+junit.xml
+
+coverage

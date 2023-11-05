@@ -3,6 +3,8 @@
     "Vue.volar",
     "Vue.vscode-typescript-vue-plugin",
     "antfu.vite",
-    "ahmadawais.emoji-log-vscode"
+    "ahmadawais.emoji-log-vscode",
+    "dbaeumer.vscode-eslint",
+    "rvest.vs-code-prettier-eslint"
   ]
 }

@@ -6,9 +6,19 @@
   "scripts": {
     "bootstrap": "pnpm install",
     "build": "pnpm -r --stream build",
+    "lint": "pnpm -r lint",
     "dev": "pnpm --filter @scream/main dev"
   },
   "keywords": [],
   "author": "fancn21th <fancn21th@aliyun.com> (http://fancn21th.cn/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "8.53.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.0.1",
+    "prettier": "2.6.2",
+    "pnpm": "8.10.2",
+    "vue-eslint-parser": "^9.0.2"
+  }
 }
