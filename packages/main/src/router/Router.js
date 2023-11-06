@@ -5,7 +5,7 @@ import { BasicLayout } from '@/layouts';
 const trunkA = () => import('@/pages/trunkA/TrunkA.vue');
 
 export const routes = [
-  { path: '/', redirect: { name: 'shared' } },
+  { path: '/', redirect: { name: 'shared-screen' } },
   {
     path: '/shared-screen/',
     name: 'shared-screen',
