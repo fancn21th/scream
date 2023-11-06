@@ -1,10 +1,12 @@
 <script setup>
 import { Layer } from '@/components/layer';
+import BasicHeader from './components/BasicHeader.vue';
 </script>
 
 <template>
   <Layer :index="1000">
     <!-- shared layer -->
+    <BasicHeader />
     <!-- router-view is placeholder for nested route -->
     <router-view></router-view>
   </Layer>
@@ -27,7 +29,5 @@ import { Layer } from '@/components/layer';
     -moz-linear-gradient(0deg, transparent 99%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.1));
   background-image: linear-gradient(transparent 99%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.1)),
     linear-gradient(90deg, transparent 99%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.1));
-  -pie-background: linear-gradient(transparent 99%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.1)) 0 0 / 50px 50px,
-    linear-gradient(90deg, transparent 99%, rgba(0, 0, 0, 0.1) 99%, rgba(0, 0, 0, 0.1)) 0 0 / 50px 50px white;
 }
 </style>

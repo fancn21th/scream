@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <h1>Leave A</h1>
+  <h1>Leaf A</h1>
 </template>
 
 <style></style>

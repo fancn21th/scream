@@ -6,10 +6,15 @@ const props = defineProps({
   },
 });
 
-import { ref, markRaw } from 'vue';
+import { ref, markRaw, onBeforeMount } from 'vue';
 import { vElementSize } from '@vueuse/components';
 import { GridLayout, GridItem } from 'vue3-grid-layout-next';
 import { colsNumber, getRowHeight } from '@/configs/cardsConfig';
+import { topBarHeightPx } from '@/configs/layoutConfig';
+
+onBeforeMount(() => {
+  document.documentElement.style.setProperty('--top-row-height', topBarHeightPx);
+});
 
 // calculation for grid layout height by depending on the height of the container
 // the height of the grid layout is determined by rowHeight
@@ -45,7 +50,7 @@ const resizable = true;
       :is-resizable="resizable"
       :vertical-compact="true"
       :use-css-transforms="false"
-      :margin="[24, 10]"
+      :margin="[10, 10]"
     >
       <GridItem v-for="item in layout" :key="item.i" :static="item.static" :x="item.x" :y="item.y" :w="item.w" :h="item.h" :i="item.i">
         <component :is="item.component" :meta="item.meta"></component>
@@ -59,13 +64,14 @@ const resizable = true;
   width: 100%;
   height: 100%;
   /* avoid overlapping with header */
-  /* padding-top: 100px; */
+  padding-top: var(--top-row-height);
   pointer-events: none;
 }
 
 .vue-grid-item {
   pointer-events: all;
   transition: none;
+  /* border */
   border: 1px solid black;
 }
 
