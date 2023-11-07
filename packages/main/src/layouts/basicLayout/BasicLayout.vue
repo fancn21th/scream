@@ -1,12 +1,16 @@
 <script setup>
 import { Layer } from '@/components/layer';
 import BasicHeader from './components/BasicHeader.vue';
+import BasicSideNav from './components/BasicSideNav.vue';
 </script>
 
 <template>
   <Layer :index="1000">
     <!-- shared layer -->
-    <BasicHeader />
+    <div class="shared-screen">
+      <BasicHeader />
+      <BasicSideNav />
+    </div>
     <!-- router-view is placeholder for nested route -->
     <router-view></router-view>
   </Layer>
@@ -17,6 +21,10 @@ import BasicHeader from './components/BasicHeader.vue';
 </template>
 
 <style scoped>
+.shared-screen {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+}
 /* http://css3pie.com/demos/gradient-patterns/ */
 .background {
   width: 100%;
