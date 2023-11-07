@@ -1,0 +1,1 @@
+import{r as o,o as a,c as n,a as e,u as t,F as s,L as c}from"./index-deac332f.js";const l={__name:"TrunkA",setup(_){return(u,m)=>{const r=o("router-view");return a(),n(s,null,[e(t(c),{index:10}),e(r)],64)}}};export{l as default};
