@@ -1,6 +1,6 @@
 <script setup>
 import { CardsLayout } from '@/layouts';
-import { LeafA } from '../../../../components';
+import { LeafA, LeafB, LeafC, LeafD, LeafE } from '../../../../components';
 
 // grid layout options
 const layout = [
@@ -21,7 +21,7 @@ const layout = [
     h: 1,
     i: 2,
     static: false,
-    component: LeafA,
+    component: LeafB,
     meta: {},
   },
   {
@@ -31,7 +31,7 @@ const layout = [
     h: 1,
     i: 3,
     static: false,
-    component: LeafA,
+    component: LeafC,
     meta: {},
   },
   {
@@ -41,7 +41,7 @@ const layout = [
     h: 1,
     i: 4,
     static: false,
-    component: LeafA,
+    component: LeafD,
     meta: {},
   },
   {
@@ -51,7 +51,7 @@ const layout = [
     h: 1,
     i: 5,
     static: false,
-    component: LeafA,
+    component: LeafE,
     meta: {},
   },
 ];

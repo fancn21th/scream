@@ -28,5 +28,6 @@ addTab(props.title);
   top: 0;
   /* 懒得用 zindex 解决覆盖问题 <oo> */
   pointer-events: none;
+  display: flex;
 }
 </style>
