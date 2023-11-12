@@ -1,5 +1,6 @@
 import { createApp } from 'vue';
 import './style.css';
+import '@scream/map/dist/style.css';
 import App from './App.vue';
 import router from './router/Router.js';
 import * as components from './components/fCard';

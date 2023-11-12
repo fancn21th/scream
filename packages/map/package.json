@@ -14,6 +14,9 @@
     },
     "./*": "./*"
   },
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
     "dev": "vite",
     "dev:main": "vite build --watch",
@@ -22,6 +25,8 @@
     "lint": "eslint --ext .js,.vue src/ --ignore-path ../../.gitignore --fix"
   },
   "dependencies": {
+    "@turf/turf": "6.5.0",
+    "echarts": "5.4.3",
     "vue": "^3.3.4"
   },
   "devDependencies": {
