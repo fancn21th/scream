@@ -7,7 +7,7 @@
     "bootstrap": "pnpm install",
     "build": "pnpm -r --stream build",
     "lint": "pnpm -r lint",
-    "dev": "pnpm --filter @scream/main dev",
+    "dev": "pnpm -r --parallel dev:main",
     "deploy": "sh ./deploy.sh"
   },
   "keywords": [

@@ -16,6 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "dev:main": "vite build --watch",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --ext .js,.vue src/ --ignore-path ../../.gitignore --fix"
